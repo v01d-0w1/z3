@@ -8,16 +8,17 @@ floating_modifier $mod
 
 #launchpad
 
-bindsym $mod+shift+u exec kitty -e ~/music_install.sh &
+bindsym $mod+shift+g exec kitty -e  cvlc /home/z6/Music/focus.mp3 & 
+bindsym $mod+shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
 bindsym $mod+shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
 bindsym $mod+o exec kitty -e ~/yt_install.sh
 bindsym $mod+y exec --no-startup-id ~/app/freetube/freetube
-bindsym $mod+u exec --no-startup-id ~/run_layout.sh
+bindsym $mod+u exec --no-startup-id ~/z6_sh/run_layout.sh
 bindsym $mod+shift+y exec kitty -e links duckduckgo.com
 bindsym $mod+e exec kitty -e nvim
 bindsym $mod+shift+w exec kitty -e sudo nmtui
 bindsym $mod+shift+e exec kitty -e nvim ~
-bindsym $mod+x exec kitty -e ~/pipes.sh
+bindsym $mod+x exec kitty -e ~/z6_sh/pipes.sh
 bindsym $mod+b exec ~/app/Brave.AppImage
 bindsym $mod+n exec ~/app/StandardNotes.AppImage
 bindsym $mod+shift+f exec thunar
@@ -32,9 +33,8 @@ bindsym $mod+shift+c exec kitty -e cava
 bindsym $mod+i exec kitty -e cbonsai -li -M 40 -c '^' -L 160
 bindsym $mod+shift+i exec kitty -e nvim ~/.config/i3/config
 bindsym $mod+shift+x exec kitty -e cmatrix
-bindsym $mod+shift+g exec kitty -e cvlc --no-video ~/video/focus.mp4
 bindsym $mod+shift+t exec kitty -e nvim ~/code/key.txt
-bindsym $mod+c exec --no-startup-id kitty -e ~/audio_player.sh &
+bindsym $mod+c exec --no-startup-id kitty -e ~/z6_sh/audio_player.sh &
 bindsym $mod+t exec --no-startup-id kitty -e ~/.config/i3/scripts/termdown_input.sh 
 bindsym $mod+shift+b exec blueman-manager
 bindsym $mod+z exec ~/app/Zen.AppImage
