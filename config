@@ -8,10 +8,11 @@ floating_modifier $mod
 
 #launchpad
 
+bindsym $mod+w exec --no-startup-id kitty -e bash -i ~/z6_sh/chess.sh
 bindsym $mod+shift+g exec kitty -e  cvlc /home/z6/Music/focus.mp3 & 
 bindsym $mod+shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
 bindsym $mod+shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
-bindsym $mod+o exec kitty -e ~/yt_install.sh
+bindsym $mod+o exec kitty -e /home/z6/z6_sh/yt_install.sh &
 bindsym $mod+y exec --no-startup-id ~/app/freetube/freetube
 bindsym $mod+u exec --no-startup-id ~/z6_sh/run_layout.sh
 bindsym $mod+shift+y exec kitty -e links duckduckgo.com
