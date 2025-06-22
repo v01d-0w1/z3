@@ -8,7 +8,8 @@ floating_modifier $mod
 
 #launchpad
 
-bindsym $mod+w exec --no-startup-id kitty -e bash -i ~/z6_sh/chess.sh
+bindsym $mod+shift+f exec kitty -e ranger &
+bindsym $mod+w exec kitty -e --override font_size=26 cli-chess &
 bindsym $mod+shift+g exec kitty -e  cvlc /home/z6/Music/focus.mp3 & 
 bindsym $mod+shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
 bindsym $mod+shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
@@ -22,7 +23,7 @@ bindsym $mod+shift+e exec kitty -e nvim ~
 bindsym $mod+x exec kitty -e ~/z6_sh/pipes.sh
 bindsym $mod+b exec ~/app/Brave.AppImage
 bindsym $mod+n exec ~/app/StandardNotes.AppImage
-bindsym $mod+shift+f exec thunar
+bindsym $mod+q exec thunar
 bindsym $mod+p exec pavucontrol
 bindsym $mod+shift+z exec zathura
 bindsym $mod+shift+m exec --no-startup-id betterlockscreen -l
