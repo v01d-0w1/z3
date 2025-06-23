@@ -9,7 +9,7 @@ floating_modifier $mod
 #launchpad
 
 bindsym $mod+shift+f exec kitty -e ranger &
-bindsym $mod+w exec kitty -e --override font_size=26 cli-chess &
+bindsym $mod+w exec kitty -e --override font_size=46 cli-chess &
 bindsym $mod+shift+g exec kitty -e  cvlc /home/z6/Music/focus.mp3 & 
 bindsym $mod+shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
 bindsym $mod+shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
