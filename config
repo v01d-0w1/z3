@@ -1,5 +1,6 @@
 # Set mod key to Alt
 set $mod Mod1
+set $secondary_mod Mod4
 
 font pango:monospace 10
 
@@ -15,7 +16,7 @@ bindsym $mod+shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
 bindsym $mod+shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
 bindsym $mod+o exec kitty -e /home/z6/z6_sh/yt_install.sh &
 bindsym $mod+y exec --no-startup-id ~/app/freetube/freetube
-bindsym $mod+u exec --no-startup-id ~/z6_sh/run_layout.sh
+bindsym $mod+u exec kitty -e ~/z6_sh/launch_layout.sh
 bindsym $mod+shift+y exec kitty -e links duckduckgo.com
 bindsym $mod+e exec kitty -e nvim
 bindsym $mod+shift+w exec kitty -e sudo nmtui
@@ -154,7 +155,7 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf --daemon
 exec kitty -e mpd &
 
 focus_wrapping no
-exec_always --no-startup-id feh --bg-scale ~/img/png_img/gebe.png
+exec_always --no-startup-id feh --bg-scale ~/img/png_img/gwindle.png
 
 
 set $bg-color 	         #00cc41
