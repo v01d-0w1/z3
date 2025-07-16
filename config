@@ -1,13 +1,15 @@
 # Set mod key to Alt
 set $mod Mod1
-set $secondary_mod Mod4
 
 font pango:monospace 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+#workspace lunching
 
-#launchpad
+bindsym shift+1 exec ~/workspace/layout1.sh
+bindsym shift+2 exec ~/workspace/layout2.sh
+#launchpad(alt)
 
 bindsym $mod+shift+f exec kitty -e ranger &
 bindsym $mod+w exec kitty -e --override font_size=26 cli-chess &
@@ -16,7 +18,7 @@ bindsym $mod+shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
 bindsym $mod+shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
 bindsym $mod+o exec kitty -e /home/z6/z6_sh/yt_install.sh &
 bindsym $mod+y exec --no-startup-id ~/app/freetube/freetube
-bindsym $mod+u exec kitty -e ~/z6_sh/launch_layout.sh
+bindsym $mod+u exec kitty -e ~/z6_sh/launch_layout.sh &
 bindsym $mod+shift+y exec kitty -e links duckduckgo.com
 bindsym $mod+e exec kitty -e nvim
 bindsym $mod+shift+w exec kitty -e sudo nmtui
