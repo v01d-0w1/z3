@@ -6,7 +6,7 @@ read TIME
 if [ -n "$TIME" ]; then
     termdown "$TIME"
     # After termdown finishes
-    cvlc --no-video ~/video/focus.mp4
+    cvlc --no-video ~/Music/focus.mp4
 else
     echo "No time entered. Exiting..."
     sleep 2
