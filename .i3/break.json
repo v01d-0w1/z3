@@ -1,0 +1,29 @@
+{
+  "layout": "splitv",
+  "percent": 0.9,
+  "type": "con",
+  "nodes": [
+        {
+          "name": "editor-top-left",
+          "percent": 0.7,
+          "type": "con",
+          "swallows": [
+            {
+              "class": "^kitty$",
+              "instance": "^kitty$"
+            }
+          ]
+        },
+        {
+          "name": "editor-top-right",
+          "percent": 0.3,
+          "type": "con",
+          "swallows": [
+            {
+              "class": "^kitty$",
+              "instance": "^kitty$"            
+            }
+          ]
+        }
+      ]
+    }
