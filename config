@@ -12,8 +12,10 @@ bindsym control+shift+2 exec ~/workspace/layout2.sh
 bindsym control+shift+3 exec ~/workspace/layout3.sh
 #launchpad(alt)
 
-bindsym $mod+Control+v exec visualboyadvance-m
+bindsym $mod+Control+a exec kitty -e /home/z6/z6_sh/alarm.sh
+bindsym $mod+Control+c exec --no-startup-id ~/z6_sh/sleep-toggle.sh
 bindsym $mod+Control+l exec lutris
+bindsym $mod+Control+v exec visualboyadvance-m
 
 bindsym $mod+a exec kitty -e tgpt -is
 bindsym $mod+b exec ~/app/Brave.AppImage
@@ -169,7 +171,7 @@ exec redshift -O 4000
 exec ./.config/polybar/launch.sh --cuts
 
 focus_wrapping no
-exec_always --no-startup-id feh --bg-scale ~/img/png_img/waves.png
+exec_always --no-startup-id feh --bg-scale ~/img/punk.png
 
 set $bg-color 	         #009a1f
 set $inactive-bg-color   #006614

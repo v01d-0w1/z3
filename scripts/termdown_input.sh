@@ -6,7 +6,7 @@ read TIME
 if [ -n "$TIME" ]; then
     termdown "$TIME"
     # After termdown finishes
-    cvlc --no-video ~/Music/focus.mp3
+    cvlc --no-video ~/Music/jamtone.mp3
     ~/.config/i3/scripts/termdown_input.sh
 else
     echo "No time entered. Exiting..."
