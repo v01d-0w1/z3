@@ -15,6 +15,7 @@ bindsym control+shift+3 exec ~/workspace/layout3.sh
 bindsym $mod+Control+a exec kitty -e /home/z6/z6_sh/alarm.sh
 bindsym $mod+Control+c exec --no-startup-id ~/z6_sh/sleep-toggle.sh
 bindsym $mod+Control+l exec lutris
+bindsym $mod+Control+p exec ~/z6_sh/toggle_picom.sh
 bindsym $mod+Control+v exec visualboyadvance-m
 
 bindsym $mod+a exec kitty -e tgpt -is
@@ -28,7 +29,7 @@ bindsym $mod+m exec --no-startup-id ~/.config/i3/scripts/mouse.sh
 bindsym $mod+n exec ~/app/StandardNotes.AppImage
 bindsym $mod+o exec kitty -e /home/z6/z6_sh/yt_install.sh &
 bindsym $mod+p exec pavucontrol
-bindsym $mod+q exec qutebrowser
+bindsym $mod+q exec qutebrowser --basedir ~/.config/qutebrowser/workspace/z6
 bindsym $mod+t exec --no-startup-id kitty -e ~/.config/i3/scripts/termdown_input.sh 
 bindsym $mod+w exec kitty -e --override font_size=26 cli-chess &
 bindsym $mod+x exec kitty -e ~/z6_sh/pipes.sh
@@ -169,8 +170,8 @@ exec picom
 exec kitty -e mpd &
 exec redshift -O 4000
 exec ./.config/polybar/launch.sh --cuts
-
 focus_wrapping no
+
 exec_always --no-startup-id feh --bg-scale ~/img/punk.png
 
 set $bg-color 	         #009a1f
