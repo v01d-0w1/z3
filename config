@@ -15,9 +15,9 @@ bindsym control+shift+3 exec ~/workspace/layout3.sh
 bindsym $mod+Control+a exec kitty -e /home/z6/z6_sh/alarm.sh
 bindsym $mod+Control+c exec --no-startup-id ~/z6_sh/sleep-toggle.sh
 bindsym $mod+Control+l exec lutris
+bindsym $mod+Control+k exec keepassxc
 bindsym $mod+Control+p exec ~/z6_sh/toggle_picom.sh
 bindsym $mod+Control+v exec visualboyadvance-m
-
 bindsym $mod+a exec kitty -e tgpt -is
 bindsym $mod+b exec ~/app/Brave.AppImage
 bindsym $mod+c exec --no-startup-id kitty -e ~/z6_sh/audio_player.sh &
