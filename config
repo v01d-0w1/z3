@@ -14,10 +14,12 @@ bindsym control+shift+3 exec ~/workspace/layout3.sh
 
 bindsym $mod+Control+a exec kitty -e /home/z6/z6_sh/alarm.sh
 bindsym $mod+Control+c exec --no-startup-id ~/z6_sh/sleep-toggle.sh
-bindsym $mod+Control+l exec lutris
 bindsym $mod+Control+k exec keepassxc
+bindsym $mod+Control+l exec lutris
+bindsym $mod+Control+m exec mypaint
 bindsym $mod+Control+p exec ~/z6_sh/toggle_picom.sh
 bindsym $mod+Control+v exec visualboyadvance-m
+
 bindsym $mod+a exec kitty -e tgpt -is
 bindsym $mod+b exec ~/app/Brave.AppImage
 bindsym $mod+c exec --no-startup-id kitty -e ~/z6_sh/audio_player.sh &
@@ -33,7 +35,7 @@ bindsym $mod+q exec qutebrowser --basedir ~/.config/qutebrowser/workspace/z6
 bindsym $mod+t exec --no-startup-id kitty -e ~/.config/i3/scripts/termdown_input.sh 
 bindsym $mod+w exec kitty -e --override font_size=26 cli-chess &
 bindsym $mod+x exec kitty -e ~/z6_sh/pipes.sh
-bindsym $mod+y exec --no-startup-id ~/app/freetube-0.23.8-beta-amd64.AppImage
+bindsym $mod+y exec ~/app/freetube.AppImage
 bindsym $mod+z exec ~/app/Zen.AppImage
 
 bindsym $mod+shift+b exec blueman-manager
@@ -47,7 +49,7 @@ bindsym $mod+shift+m exec --no-startup-id betterlockscreen -l
 bindsym $mod+shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
 bindsym $mod+shift+p exec --no-startup-id flameshot gui
 bindsym $mod+shift+s exec kitty -e btop
-bindsym $mod+shift+t exec kitty -e nvim ~/code/key.txt
+bindsym $mod+shift+t exec kitty -e ~/tttui/bin/tttui
 bindsym $mod+shift+v exec virt-manager
 bindsym $mod+shift+w exec kitty -e sudo nmtui
 bindsym $mod+shift+x exec kitty -e cmatrix
