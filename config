@@ -26,9 +26,9 @@ bindsym $mod+c exec --no-startup-id kitty -e ~/z6_sh/audio_player.sh &
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+e exec kitty -e nvim
 bindsym $mod+g exec gimp
-bindsym $mod+i exec kitty -e cbonsai -li -M 40 -c '^' -L 160
-bindsym $mod+m exec --no-startup-id ~/.config/i3/scripts/mouse.sh
-bindsym $mod+n exec ~/app/StandardNotes.AppImage
+bindsym $mod+i exec kitty -e cbonsai -li
+bindsym $mod+m exec --no-startup-id betterlockscreen -l
+bindsym $mod+n exec kitty -e tjournal
 bindsym $mod+o exec kitty -e /home/z6/z6_sh/yt_install.sh &
 bindsym $mod+p exec pavucontrol
 bindsym $mod+q exec qutebrowser --basedir ~/.config/qutebrowser/workspace/z6
@@ -43,9 +43,9 @@ bindsym $mod+shift+c exec kitty -e cava
 bindsym $mod+shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
 bindsym $mod+shift+e exec kitty -e nvim ~
 bindsym $mod+shift+f exec kitty -e ranger &
-bindsym $mod+shift+g exec kitty -e  cvlc /home/z6/Music/focus.mp3 & 
+bindsym $mod+shift+g exec godot 
 bindsym $mod+shift+i exec kitty -e nvim ~/.config/i3/config
-bindsym $mod+shift+m exec --no-startup-id betterlockscreen -l
+bindsym $mod+shift+m exec --no-startup-id ~/.config/i3/scripts/mouse.sh
 bindsym $mod+shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
 bindsym $mod+shift+p exec --no-startup-id flameshot gui
 bindsym $mod+shift+s exec kitty -e btop
@@ -189,5 +189,5 @@ client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-col
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #009a1f
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #009a1f
 
-default_border pixel 9
+default_border pixel 10
 
