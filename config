@@ -19,6 +19,7 @@ bindsym $mod+Control+l exec lutris
 bindsym $mod+Control+m exec mypaint
 bindsym $mod+Control+p exec ~/z6_sh/toggle_picom.sh
 bindsym $mod+Control+v exec visualboyadvance-m
+bindsym $mod+Control+t exec kitty -e textual-paint --theme dark
 
 bindsym $mod+a exec kitty -e tgpt -is
 bindsym $mod+b exec ~/app/Brave.AppImage
