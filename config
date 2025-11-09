@@ -7,9 +7,15 @@ font pango:monospace 10
 floating_modifier $mod
 #workspace lunching
 
-bindsym control+shift+1 exec ~/workspace/layout1.sh
-bindsym control+shift+2 exec ~/workspace/layout2.sh
-bindsym control+shift+3 exec ~/workspace/layout3.sh
+bindsym Control+Shift+1 exec ~/workspace/layout1.sh
+bindsym Control+Shift+2 exec ~/workspace/layout2.sh
+bindsym Control+Shift+3 exec ~/workspace/layout3.sh
+
+#only Control+shift letter
+
+bindsym Control+Shift+l exec ~/app/LibreSprite-x86_64.AppImage
+bindsym Control+Shift+p exec ~/app/Pixelorama-Linux-64bit/Pixelorama.x86_64
+
 #launchpad(alt)
 
 bindsym $mod+Control+a exec kitty -e /home/z6/z6_sh/alarm.sh
@@ -19,7 +25,6 @@ bindsym $mod+Control+l exec lutris
 bindsym $mod+Control+m exec mypaint
 bindsym $mod+Control+p exec ~/z6_sh/toggle_picom.sh
 bindsym $mod+Control+v exec visualboyadvance-m
-bindsym $mod+Control+t exec kitty -e textual-paint --theme dark
 
 bindsym $mod+a exec kitty -e tgpt -is
 bindsym $mod+b exec ~/app/Brave.AppImage
@@ -39,29 +44,29 @@ bindsym $mod+x exec kitty -e ~/z6_sh/pipes.sh
 bindsym $mod+y exec ~/app/freetube.AppImage
 bindsym $mod+z exec ~/app/Zen.AppImage
 
-bindsym $mod+shift+b exec blueman-manager
-bindsym $mod+shift+c exec kitty -e cava
-bindsym $mod+shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
-bindsym $mod+shift+e exec kitty -e nvim ~
-bindsym $mod+shift+f exec kitty -e ranger &
-bindsym $mod+shift+g exec godot 
-bindsym $mod+shift+i exec kitty -e nvim ~/.config/i3/config
-bindsym $mod+shift+m exec --no-startup-id ~/.config/i3/scripts/mouse.sh
-bindsym $mod+shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
-bindsym $mod+shift+p exec --no-startup-id flameshot gui
-bindsym $mod+shift+s exec kitty -e btop
-bindsym $mod+shift+t exec kitty -e ~/tttui/bin/tttui
-bindsym $mod+shift+v exec virt-manager
-bindsym $mod+shift+w exec kitty -e sudo nmtui
-bindsym $mod+shift+x exec kitty -e cmatrix
-bindsym $mod+shift+y exec kitty -e links duckduckgo.com
-bindsym $mod+shift+z exec zathura
+bindsym $mod+Shift+b exec blueman-manager
+bindsym $mod+Shift+c exec kitty -e cava
+bindsym $mod+Shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
+bindsym $mod+Shift+e exec kitty -e nvim ~
+bindsym $mod+Shift+f exec kitty -e ranger &
+bindsym $mod+Shift+g exec godot 
+bindsym $mod+Shift+i exec kitty -e nvim ~/.config/i3/config
+bindsym $mod+Shift+m exec --no-startup-id ~/.config/i3/scripts/mouse.sh
+bindsym $mod+Shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
+bindsym $mod+Shift+p exec --no-startup-id flameshot gui
+bindsym $mod+Shift+s exec kitty -e btop
+bindsym $mod+Shift+t exec kitty -e ~/tttui/bin/tttui
+bindsym $mod+Shift+v exec virt-manager
+bindsym $mod+Shift+w exec kitty -e sudo nmtui
+bindsym $mod+Shift+x exec kitty -e cmatrix
+bindsym $mod+Shift+y exec kitty -e links duckduckgo.com
+bindsym $mod+Shift+z exec zathura
 
-bindsym $mod+control+shift+f exec thunar
+bindsym $mod+Control+Shift+f exec thunar
 
 #system essential command bindings
 
-bindsym $mod+shift+Return exec kitty -e tmux
+bindsym $mod+Shift+Return exec kitty -e tmux
 bindsym $mod+Return exec kitty
 bindsym $mod+shift+q kill
 bindsym $mod+h focus left
