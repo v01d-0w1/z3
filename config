@@ -20,42 +20,37 @@ bindsym Control+Shift+p exec ~/app/Pixelorama-Linux-64bit/Pixelorama.x86_64
 
 bindsym $mod+Control+a exec kitty -e /home/z6/z6_sh/alarm.sh
 bindsym $mod+Control+c exec --no-startup-id ~/z6_sh/sleep-toggle.sh
+bindsym $mod+Control+d exec ~/app/Discord/Discord
 bindsym $mod+Control+k exec keepassxc
-bindsym $mod+Control+l exec lutris
-bindsym $mod+Control+m exec mypaint
+bindsym $mod+Control+l exec kitty -e libgen-downloader
 bindsym $mod+Control+p exec ~/z6_sh/toggle_picom.sh
-bindsym $mod+Control+v exec visualboyadvance-m
+bindsym $mod+Control+r exec kitty -e ranger  
+bindsym $mod+Control+t exec kitty -e tetris-tui
 
 bindsym $mod+a exec kitty -e tgpt -is
-bindsym $mod+b exec ~/app/Brave.AppImage
+bindsym $mod+b exec kitty -e Bookdl
 bindsym $mod+c exec --no-startup-id kitty -e ~/z6_sh/audio_player.sh &
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+e exec kitty -e nvim
-bindsym $mod+g exec gimp
-bindsym $mod+i exec kitty -e cbonsai -li
 bindsym $mod+m exec --no-startup-id betterlockscreen -l
-bindsym $mod+n exec kitty -e tjournal
+bindsym $mod+n exec torbrowser-launcher
 bindsym $mod+o exec kitty -e /home/z6/z6_sh/yt_install.sh &
 bindsym $mod+p exec pavucontrol
 bindsym $mod+q exec qutebrowser --basedir ~/.config/qutebrowser/workspace/z6
 bindsym $mod+t exec --no-startup-id kitty -e ~/.config/i3/scripts/termdown_input.sh 
-bindsym $mod+w exec kitty -e --override font_size=26 cli-chess &
-bindsym $mod+x exec kitty -e ~/z6_sh/pipes.sh
 bindsym $mod+y exec ~/app/freetube.AppImage
-bindsym $mod+z exec ~/app/Zen.AppImage
 
 bindsym $mod+Shift+b exec blueman-manager
 bindsym $mod+Shift+c exec kitty -e cava
 bindsym $mod+Shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
 bindsym $mod+Shift+e exec kitty -e nvim ~
 bindsym $mod+Shift+f exec kitty -e ranger &
-bindsym $mod+Shift+g exec godot 
 bindsym $mod+Shift+i exec kitty -e nvim ~/.config/i3/config
 bindsym $mod+Shift+m exec --no-startup-id ~/.config/i3/scripts/mouse.sh
 bindsym $mod+Shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
 bindsym $mod+Shift+p exec --no-startup-id flameshot gui
 bindsym $mod+Shift+s exec kitty -e btop
-bindsym $mod+Shift+t exec kitty -e ~/tttui/bin/tttui
+bindsym $mod+Shift+t exec thunderbird
 bindsym $mod+Shift+v exec virt-manager
 bindsym $mod+Shift+w exec kitty -e sudo nmtui
 bindsym $mod+Shift+x exec kitty -e cmatrix
@@ -180,7 +175,7 @@ exec redshift -O 4000
 exec ./.config/polybar/launch.sh --cuts
 focus_wrapping no
 
-exec_always --no-startup-id feh --bg-scale ~/img/punk.png
+exec_always --no-startup-id feh --bg-scale ~/img/wallpaper/greenpool.jpg
 
 set $bg-color 	         #009a1f
 set $inactive-bg-color   #006614
