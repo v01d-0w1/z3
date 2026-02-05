@@ -13,8 +13,6 @@ bindsym Control+Shift+3 exec ~/workspace/layout3.sh
 
 #only Control+shift letter
 
-bindsym Control+Shift+l exec ~/app/LibreSprite-x86_64.AppImage
-bindsym Control+Shift+p exec ~/app/Pixelorama-Linux-64bit/Pixelorama.x86_64
 
 #launchpad(alt)
 
@@ -27,7 +25,7 @@ bindsym $mod+Control+p exec ~/z6_sh/toggle_picom.sh
 bindsym $mod+Control+r exec kitty -e ranger  
 bindsym $mod+Control+t exec kitty -e tetris-tui
 
-bindsym $mod+a exec kitty -e tgpt -is
+bindsym $mod+a exec kitty -e ~/z6_sh/opencode.sh 
 bindsym $mod+b exec kitty -e Bookdl
 bindsym $mod+c exec --no-startup-id kitty -e ~/z6_sh/audio_player.sh &
 bindsym $mod+d exec rofi -show drun
@@ -47,11 +45,12 @@ bindsym $mod+Shift+e exec kitty -e nvim ~
 bindsym $mod+Shift+f exec kitty -e ranger &
 bindsym $mod+Shift+i exec kitty -e nvim ~/.config/i3/config
 bindsym $mod+Shift+m exec --no-startup-id ~/.config/i3/scripts/mouse.sh
+bindsym $mod+Shift+n exec kitty -e tjournal
 bindsym $mod+Shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
 bindsym $mod+Shift+p exec --no-startup-id flameshot gui
 bindsym $mod+Shift+s exec kitty -e btop
 bindsym $mod+Shift+t exec thunderbird
-bindsym $mod+Shift+v exec virt-manager
+bindsym $mod+Shift+v exec virtualbox
 bindsym $mod+Shift+w exec kitty -e sudo nmtui
 bindsym $mod+Shift+x exec kitty -e cmatrix
 bindsym $mod+Shift+y exec kitty -e links duckduckgo.com
@@ -126,7 +125,7 @@ bindsym $mod+space focus mode_toggle
 # Focus the parent container
 bindsym $mod+shift+a focus parent
 # Focus the child container
-bindsym $mod+shift+n focus child
+bindsym $mod+shift+b+n focus child
 
 #bar {
 #    i3bar_command i3bar --transparency 
@@ -175,7 +174,7 @@ exec redshift -O 4000
 exec ./.config/polybar/launch.sh --cuts
 focus_wrapping no
 
-exec_always --no-startup-id feh --bg-scale ~/img/wallpaper/greenpool.jpg
+exec_always --no-startup-id feh --bg-scale ~/img/greenpool.jpg
 
 set $bg-color 	         #009a1f
 set $inactive-bg-color   #006614
