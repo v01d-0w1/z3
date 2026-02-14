@@ -16,11 +16,11 @@ bindsym Control+Shift+3 exec ~/workspace/layout3.sh
 
 #launchpad(alt)
 
-bindsym $mod+Control+a exec kitty -e /home/z6/z6_sh/alarm.sh
+bindsym $mod+Control+a exec kitty -e ~/app/arduino.AppImage
 bindsym $mod+Control+c exec --no-startup-id ~/z6_sh/sleep-toggle.sh
 bindsym $mod+Control+d exec ~/app/Discord/Discord
 bindsym $mod+Control+k exec keepassxc
-bindsym $mod+Control+l exec kitty -e libgen-downloader
+bindsym $mod+Control+l exec kitty -e bash -c 'cd ~/books/ &&libgen-downloader'
 bindsym $mod+Control+p exec ~/z6_sh/toggle_picom.sh
 bindsym $mod+Control+r exec kitty -e ranger  
 bindsym $mod+Control+t exec kitty -e tetris-tui
@@ -39,18 +39,18 @@ bindsym $mod+t exec --no-startup-id kitty -e ~/.config/i3/scripts/termdown_input
 bindsym $mod+y exec ~/app/freetube.AppImage
 
 bindsym $mod+Shift+b exec blueman-manager
-bindsym $mod+Shift+c exec kitty -e cava
+bindsym $mod+Shift+c exec kitty -e calcure
 bindsym $mod+Shift+d exec kitty -e /home/z6/z6_sh/music_install.sh &
-bindsym $mod+Shift+e exec kitty -e nvim ~
+bindsym $mod+Shift+e exec kitty -e nvim ~/code
 bindsym $mod+Shift+f exec kitty -e ranger &
 bindsym $mod+Shift+i exec kitty -e nvim ~/.config/i3/config
 bindsym $mod+Shift+m exec --no-startup-id ~/.config/i3/scripts/mouse.sh
-bindsym $mod+Shift+n exec kitty -e tjournal
+bindsym $mod+Shift+n exec kitty -e nvim ~/note
 bindsym $mod+Shift+o exec --no-startup-id kitty -e sudo tlp start & sleep 4
 bindsym $mod+Shift+p exec --no-startup-id flameshot gui
 bindsym $mod+Shift+s exec kitty -e btop
 bindsym $mod+Shift+t exec thunderbird
-bindsym $mod+Shift+v exec virtualbox
+bindsym $mod+Shift+v exec kitty -e virt-spinner.sh
 bindsym $mod+Shift+w exec kitty -e sudo nmtui
 bindsym $mod+Shift+x exec kitty -e cmatrix
 bindsym $mod+Shift+y exec kitty -e links duckduckgo.com
