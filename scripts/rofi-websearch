@@ -1,0 +1,7 @@
+#!/bin/bash
+# Web search using rofi
+
+query=$(rofi -dmenu -p "Search:" -lines 0)
+if [ -n "$query" ]; then
+    xdg-open "https://duckduckgo.com/?q=${query// /+}"
+fi
